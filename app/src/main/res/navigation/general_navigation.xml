@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/general_navigation"
+    app:startDestination="@+id/welcomeFragment"
+    >
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.presentation.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_rulesGameFragment"
+            app:destination="@id/rulesGameFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_chooseTaskFragment"
+            app:destination="@id/chooseTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rulesGameFragment"
+        android:name="com.example.presentation.fragments.GameRulesFragment"
+        android:label="fragment_choose_level"
+        tools:layout="@layout/fragment_game_rules" >
+
+        <action
+            android:id="@+id/action_rulesGameFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <argument
+            android:name="lableFromWelcomFagmentToRuls"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.presentation.fragments.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_gameFinishFragment"
+            app:destination="@id/gameFinishFragment"
+            app:popUpTo="@id/welcomeFragment" />
+        <argument
+            android:name="level"
+            app:argType="com.example.domain.models.Level" />
+        <argument
+            android:name="type"
+            app:argType="com.example.domain.usecases.Type" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFinishFragment"
+        android:name="com.example.presentation.fragments.GameFinishFragment"
+        android:label="fragment_game_finish"
+        tools:layout="@layout/fragment_game_finish" >
+
+        <argument
+            android:name="gameResalt"
+            app:argType="com.example.domain.models.GameResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/choseLevelFragment"
+        android:name="com.example.presentation.fragments.ChooseLevelFragment"
+        android:label="fragment_game_ruls"
+        tools:layout="@layout/fragment_choose_level" >
+
+
+        <action
+            android:id="@+id/action_choseLevelFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <argument
+            android:name="type"
+            app:argType="com.example.domain.usecases.Type" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTaskFragment"
+        android:name="com.example.presentation.fragments.ChooseTaskFragment"
+        android:label="fragment_choose_task"
+        tools:layout="@layout/fragment_choose_task" >
+        <action
+            android:id="@+id/action_chooseTaskFragment_to_choseLevelFragment"
+            app:destination="@id/choseLevelFragment" />
+    </fragment>
+</navigation>

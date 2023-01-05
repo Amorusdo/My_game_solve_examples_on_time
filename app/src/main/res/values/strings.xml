@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">My Game</string>
+
+    <!--строки для Welcome Fragment -->
+    <string name="name_game_label">Взрыв мозга</string>
+    <string name="start_button">Играть</string>
+    <string name="rules_button">Правила</string>
+    <string name="tx_sort_of_game"> Интелектуальная игра </string>
+
+    <!--строки для Rules Fragment -->
+    <string name="rules_back">Haзад </string>
+    <string name="tx_rules"> Правила игры: перед вами будет три фигуры, две снизу и одна сверху, в двух из них будут
+        числа. Необходимо, чтобы сумма чисел из двух нижних фигур была равна числу в верхней фигуре,
+        для этого нужно вставить недостающее число.\n\nПример: в верхнем круге число 7, в одном из
+        нижних знак вопроса, а в другом число 4. Значит на месте вопросительного знака должно
+        быть число 3, потому что 3 + 4 = 7 \n\n Задание выполняется на время, решайте быстро, отвечайте правельно!
+
+    </string>
+
+
+    <!--строки для Level Fragment -->
+    <string name="tx_test">Тест</string>
+    <string name="tx_easy">Легкий уровень </string>
+    <string name="tx_medium">Средний уровень </string>
+    <string name="tx_hard"> Тяжелый уровень </string>
+    <string name="tx_choose"> Выбери уровень </string>
+
+
+    <!--строки для Level Fragment -->
+    <string name="tx_choose_type"> Выбери тип задания </string>
+    <string name="tx_plus">+</string>
+    <string name="tx_minus">- </string>
+    <string name="tx_multiply">x</string>
+    <string name="tx_divide"> / </string>
+
+
+    <!--строки для Game Fragment -->
+    <string name="sumvol"> \? </string>
+    <string name="answer"> 0 правильных ответов </string>
+    <string name="tv_answer_progress"> %s правильных ответов из %s </string>
+
+
+    <!--строки для Finish Fragment -->
+    <string name="win"> Поздравляем, вы Отлично справились! </string>
+    <string name="lose"> Вы не справились, поробуйте еще раз! </string>
+    <string name="received_questions"> Количество вопросов : %s </string>
+    <string name="all_answer">Набранное количество правельных ответов : %s </string>
+    <string name="user_answer_percent">Процент ваших правильных ответов :  %s </string>
+    <string name="answer_percent"> Необходимое количество правельных ответов :  %s </string>
+    <string name="play_again">Заново </string>
+    <string name="button_out"> Выйти</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

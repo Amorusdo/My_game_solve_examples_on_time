@@ -1,0 +1,160 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_math"
+    android:padding="8dp"
+    tools:context="com.example.presentation.fragments.ChooseLevelFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bt_Test"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Easy"
+        app:layout_constraintEnd_toEndOf="@+id/bt_Easy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <Button
+            android:id="@+id/bTTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/test_color"
+            android:fontFamily="@font/funny_font"
+            android:text="@string/tx_test"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bt_Easy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Medium"
+        app:layout_constraintEnd_toEndOf="@+id/bt_Medium"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Test">
+
+        <Button
+            android:id="@+id/bTEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/easy_color"
+            android:fontFamily="@font/funny_font"
+            android:text="@string/tx_easy"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bt_Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Hard"
+        app:layout_constraintEnd_toEndOf="@+id/bt_Hard"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/bt_Hard"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Easy">
+
+        <Button
+            android:id="@+id/bTMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/medium_color"
+            android:layout_gravity="center"
+            android:fontFamily="@font/funny_font"
+            android:text="@string/tx_medium"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bt_Hard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Medium">
+
+        <Button
+            android:id="@+id/bTHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/funny_font"
+            android:text="@string/tx_hard"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/hard_color"
+            android:textSize="30sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_Test"
+        app:layout_constraintStart_toStartOf="@+id/bt_Test"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tx_InChooseLevelFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/funny_font"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Test"
+        app:layout_constraintEnd_toEndOf="@+id/bt_Test"
+        app:layout_constraintStart_toStartOf="@+id/bt_Test">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/funny_font"
+            android:text="@string/tx_choose"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+package com.example.domain.usecases
+
+object Utils {
+
+    const val COUNT_OF_OPTIONS = 6
+    const val MIN_SUM_VALUE_PLUS = 1
+    const val MIN_SUM_VALUE_MINUS = 0
+    const val MIN_SUM_VALUE = 1
+    const val MIN_COUNT_VALUE = 2
+
+//TEST LEVEL
+    const val MAX_SUM_VALUE_TEST_LEVEL = 10
+    const val MIN_COUNT_OF_RIGHT_ANSWER_TEST_LEVEL = 4
+    const val MIN_PERCENT_OF_RIGHT_ANSWER_TEST_LEVEL = 40.0
+    const val GAME_TIME_IN_SECOND_TEST_LEVEL= 10
+
+//EASY LEVEL
+    const val MAX_SUM_VALUE_EASY_LEVEL = 20
+    const val MIN_COUNT_OF_RIGHT_ANSWER_EASY_LEVEL = 8
+    const val MIN_PERCENT_OF_RIGHT_ANSWER_EASY_LEVEL = 50.0
+    const val GAME_TIME_IN_SECOND_EASY_LEVEL= 20
+
+//MEDIUM LEVEL
+    const val MAX_SUM_VALUE_MEDIUM_LEVEL = 30
+    const val MIN_COUNT_OF_RIGHT_ANSWER_MEDIUM_LEVEL = 15
+    const val MIN_PERCENT_OF_RIGHT_ANSWER_MEDIUM_LEVEL = 60.0
+    const val GAME_TIME_IN_SECOND_MEDIUM_LEVEL= 40
+
+//HARD LEVEL
+    const val MAX_SUM_VALUE_HARD_LEVEL = 40
+    const val MIN_COUNT_OF_RIGHT_ANSWER_HARD_LEVEL = 25
+    const val MIN_PERCENT_OF_RIGHT_ANSWER_HARD_LEVEL = 70.0
+    const val GAME_TIME_IN_SECOND_HARD_LEVEL= 60
+
+
+}
